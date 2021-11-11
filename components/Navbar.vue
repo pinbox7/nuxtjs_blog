@@ -11,7 +11,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <nuxt-link class="nav-link" to="/">Главная</nuxt-link>
@@ -21,7 +21,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input name="q" v-model="q" type="text" class="form-control mr-sm-2" placeholder="Поиск" aria-label="Поиск">
+        <input v-model="q" name="q" type="text" class="form-control mr-sm-2" placeholder="Поиск" aria-label="Поиск">
         <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit" @click.stop.prevent="submit()">Поиск</button>
       </form>
       <span class="navbar-text mr-2">Username</span>
@@ -48,6 +48,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
